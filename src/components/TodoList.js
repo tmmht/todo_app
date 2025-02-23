@@ -18,10 +18,10 @@ export const TodoList = ({
         <>
           <TodoTitle title={title} as={as} />
           <ul>
-            {todoList.map((todo) => (
+            {todoList.map((todo, index) => (
               <TodoItem
                 todo={todo}
-                key={todo.id}
+                key={index}
                 toggleTodoListItemStatus={toggleTodoListItemStatus}
                 deleteTodoListItem={deleteTodoListItem}
               />

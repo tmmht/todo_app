@@ -1,7 +1,7 @@
 // 作成したモックサーバーとの通信に axios を利用する
 import axios from "axios";
 // ローカルに準備したモックサーバーのURL
-const todoDataUrl = "http://localhost:3100/todos";
+const todoDataUrl = "http://127.0.0.1:3001/todos";
 // axios.get() でGETリクエストを送信
 // サーバー上のすべてのTODO(todos)を取得する getAllTodosData関数を宣言
 // 他ファイルで getAllTodosData()を利用できるようにするため
